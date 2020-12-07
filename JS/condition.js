@@ -2,7 +2,7 @@ Vue.component('condition', {
 
     data() {
         return {
-            userSearch: ''
+            number: 1
         }
     },
 
@@ -10,10 +10,24 @@ Vue.component('condition', {
     },
 
     template: `
-            <form action="#" class="search-form">
-                <input type="text" class="search-field" v-model="userSearch">
-                <button class="bts-search" type="button" @click="filter(userSearch)">Поиск</button>
-            </form>
+            <div class="main-pull-condition">
+                <p>Условие {{number}}</p>
+                <select name='condition_list' id="condition_list${this.number}">
+                    <option value="choose">
+                        Выбирите условие
+                    </option>
+                    <option value="age">
+                        Возраст респондента
+                    </option>
+                    <option value="type">
+                        Тип карты лояльности
+                    </option>
+                    <option value="status">
+                        Статус карты лояльности
+                    </option>
+                </select>
+                <button>Удалить условие</button>
+            </div>
     `
 
 })

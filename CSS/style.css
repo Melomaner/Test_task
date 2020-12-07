@@ -65,3 +65,25 @@ margin-bottom: 10px;
 .main-pull-navigation-button{
  
 }
+.main-pull-condition{
+    display: flex;
+    justify-content: space-around;
+}
+.main-pull-add-button{
+    width: 500px;
+    height: 100px;
+    margin: 100px;
+    align-self: center;
+}
+.main-pull-end-button{
+    display: flex;
+    justify-content: space-between;
+}
+.main-pull-end-button-test{
+    width: 150px;
+    height: 50px;
+}
+.main-pull-end-button-next{
+    width: 150px;
+    height: 50px;
+}
