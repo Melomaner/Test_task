@@ -9,52 +9,58 @@
 </head>
 
 <body>
-    <header class="main-header padding-size">
-        <div>
-            <div>
+    <div class="container" id="app">
+        <header class="main-header padding-size">
+            <div class="main-header-up">
+                <img class="main-header-img" src="#" alt="Лого" width="200" height="200">
                 <!--        лого с лева-->
-            </div>
-            <div>
-                <!--        Поиск по системе по середине-->
-            </div>
-            <div>
+                <search></search>
+                <!-- Поиск по системе по середине-->
+                <user></user>
                 <!--        Аватарка и подпись с права-->
             </div>
-        </div>
-        <nav>
-            <!-- Путь до опроса -->
-        </nav>
-    </header>
-    <main>
-        <aside>
-            <!-- колонка с лева -->
-        </aside>
-        <section>
-            <!-- Основной блок -->
-            <div>
+            <nav>
+                <way></way>
+                <!-- Путь до опроса -->
+            </nav>
+        </header>
+        <main class="content padding-size">
+            <aside class="menu">
+                <!-- колонка с лева -->
+                <button class="menu-button">Опросы</button>
+                <button class="menu-button">Пользователи</button>
+                <button class="menu-button">Черные Списки</button>
+                <button class="menu-button">Колл-центр</button>
+            </aside>
+            <section class="main-pull">
+                <!-- Основной блок -->
+                <navigation></navigation>
                 <!-- переходы -->
-            </div>
-            <article>
+                <p>Добавить опрос</p>
+                <condition></condition>
                 <!-- Условие n -->
-            </article>
-            <button>
-                <!-- добавить условие -->
-            </button>
-            <div>
                 <button>
-                    <!-- Протестировать опрос -->
+                    <!-- добавить условие -->
                 </button>
-                <button>
-                    <!-- Далее -->
-                </button>
-            </div>
-        </section>
+                <div>
+                    <button>
+                        <!-- Протестировать опрос -->
+                    </button>
+                    <button>
+                        <!-- Далее -->
+                    </button>
+                </div>
+            </section>
 
-    </main>
+        </main>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-    <script>
-
-    </script>
+    <script src="js/condition.js"></script>
+    <script src="js/navigation.js"></script>
+    <script src="js/user.js"></script>
+    <script src="js/way.js"></script>
+    <script src="js/search.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
